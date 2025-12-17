@@ -81,7 +81,7 @@ S2TD_project/
 ### 2. Clone & Environment
 
 ```bash
-git clone [https://github.com/yourusername/S2TD.git](https://github.com/yourusername/S2TD.git)
+git clone [https://github.com/Shreyas8905/S2TD.git](https://github.com/Shreyas8905/S2TD.git)
 cd S2TD
 python -m venv venv
 ```
@@ -136,4 +136,4 @@ _Enter your query when prompted. Watch the console logs to see the "thought proc
 
 ### Author
 
-Built by [Your Name].
+[**Shreyas Kulkarni**](https://github.com/Shreyas8905)
