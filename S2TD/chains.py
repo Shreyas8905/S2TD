@@ -1,7 +1,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.messages import SystemMessage, HumanMessage
 from pydantic import BaseModel, Field
-from nexus.config import fast_llm, smart_llm
+from S2TD.config import fast_llm, smart_llm
 
 # --- 1. GRADER CHAIN ---
 class GradeDocuments(BaseModel):

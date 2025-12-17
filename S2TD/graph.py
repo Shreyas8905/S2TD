@@ -1,6 +1,6 @@
 from langgraph.graph import END, StateGraph, START
-from nexus.state import GraphState
-from nexus.nodes import (
+from S2TD.state import GraphState
+from S2TD.nodes import (
     retrieve, grade_documents, web_search,
     generate_creative, generate_critic, generate_summarizer,
     chairman_synthesis

@@ -1,6 +1,6 @@
 from langchain_core.documents import Document
-from nexus.config import retriever, web_search_tool
-from nexus.chains import (
+from S2TD.config import retriever, web_search_tool
+from S2TD.chains import (
     retrieval_grader, 
     get_creative_answer, 
     get_critic_answer, 

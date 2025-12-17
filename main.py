@@ -1,5 +1,5 @@
-from nexus.utils import build_index
-from nexus.graph import build_graph
+from S2TD.utils import build_index
+from S2TD.graph import build_graph
 import os
 
 if __name__ == "__main__":
