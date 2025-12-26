@@ -14,8 +14,8 @@ Unlike a standard chatbot that blindly answers from retrieved documents, S2TD em
 1.  **Evaluates Data:** It grades retrieved documents for relevance.
 2.  **Self-Corrects:** If data is poor, it automatically rewrites the query and searches the web.
 3.  **Ensemble Thinking:** It uses a **"Council of LLMs"** (Creative, Critic, Summarizer) to generate diverse perspectives in parallel.
-   - Inspiration from Sir [Andrej Karpathy](https://github.com/karpathy) from his recent work [llm-council](https://github.com/karpathy/llm-council).
 5.  **Synthesis:** A "Chairman" LLM merges these perspectives into a single, hallucination-free answer.
+_Inspiration from Sir [Andrej Karpathy](https://github.com/karpathy) from his recent work [llm-council](https://github.com/karpathy/llm-council)._
 
 ---
 
@@ -23,30 +23,7 @@ Unlike a standard chatbot that blindly answers from retrieved documents, S2TD em
 
 The system is built using **LangGraph** (State Machine), **Groq** (High-speed Llama 3 inference), and **ChromaDB** (Vector Storage).
 
-```text
-       [User Query]
-            |
-            v
-    [Retrieve Documents]
-            |
-            v
-   < Relevance Check > ----(No)----> [Web Search]
-            |                              |
-          (Yes)                            |
-            |                              v
-            +------------------------------+
-            |             |                |
-            v             v                v
-    [Creative LLM]  [Critic LLM]   [Summarizer LLM]
-            |             |                |
-            +-------------+----------------+
-                          |
-                          v
-                 [Chairman Synthesis]
-                          |
-                          v
-                    [Final Answer]
-```
+![Architecture Diagram](https://github.com/Shreyas8905/S2TD/blob/main/arch.png)
 
 ---
 
